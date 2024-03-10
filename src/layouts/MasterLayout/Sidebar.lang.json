@@ -1,0 +1,21 @@
+{
+  "en": {
+    "home": "Home",
+    "market_place": "Market place",
+    "nft_sales": "NFT sales",
+    "upcoming_drop": "Upcoming drop",
+    "creator": "Creator",
+    "all_project": "All Projects",
+    "refund": "Refund",
+    "claim": "Claim",
+    "news": "News"
+  },
+  "vn": {
+    "home": "Trang chủ",
+    "market_place": "Market place",
+    "nft_sales": "NFT sales",
+    "upcoming_drop": "Upcoming drop",
+    "creator": "Creator",
+    "news": "Tin tức"
+  }
+}

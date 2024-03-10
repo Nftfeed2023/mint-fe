@@ -1,0 +1,17 @@
+{
+  "en": {
+    "image": "Image",
+    "name": "Name",
+    "transaction_id": "Transaction Id",
+    "transaction_type": "Transaction Type",
+    "time": "Time",
+    "amount": "Amount",
+    "buyer": "Buyer",
+    "seller": "Seller",
+    "select_option": "Select option",
+    "newest": "Newest Listed",
+    "oldest": "Oldest Listed",
+    "highest_total_volume": "Price: Low to high",
+    "lowest_total_volume": "Price: High to low"
+  }
+}

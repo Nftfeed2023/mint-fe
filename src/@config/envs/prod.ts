@@ -1,0 +1,288 @@
+import { CHAIN_CODE } from "../chain-code";
+import { IEnvConfig } from "../dto";
+
+const config: IEnvConfig = {
+  name: "PRODUCTION",
+  CONNECTORS: {
+    ROOT: {
+      baseUrl: "",
+    },
+  },
+  SSO: {
+    loginUrl: "".trim(),
+    clientId: "".trim(),
+  },
+  applyChainIds: [
+    CHAIN_CODE.BLAST_MAINNET,
+    CHAIN_CODE.ZETACHAIN_MAINNET,
+    CHAIN_CODE.BASE_MAINNET,
+    CHAIN_CODE.OP_MAINNET,
+    CHAIN_CODE.ARBITRUM_MAINNET,
+    CHAIN_CODE.BSC_MAINNET,
+    CHAIN_CODE.SCROLL_MAINNET,
+    CHAIN_CODE.POLYGON_MAINNET,
+    CHAIN_CODE.AVAX,
+    CHAIN_CODE.ZORA,
+    CHAIN_CODE.OPBNB,
+    CHAIN_CODE.LINEA,
+    CHAIN_CODE.MANTA,
+    CHAIN_CODE.ZETACHAIN_TESTNET,
+  ],
+  customSMC: {
+    // BASE
+    [CHAIN_CODE.BASE_MAINNET]: {
+      MINT_NFT_FACTORY: "0xA08b02513d9849E64b14640E32e2f166422e2583",
+      MINT_NFT_FACTORY_V2: "0x2C6B315391E753Ecb2c1DdCA480D11f19E345862".trim(),
+      STAKE_NFT_AUTO_APY: "0xfc161FFb28599a0d07941c265F4FcFeF60f3034f".trim(),
+      WSHARKIE: "0x03D8A7ad755E5645145D0a7c3CFD0DCF5F52DF8C".trim(),
+      SHARKIE_NFT: "0x268174ff68633901a2ec6511b33c590aac4fe263".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "0x27dac2f25edb24c75cd1781e68b0358c91a9765a".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY:
+        "0xAcA5813d51D721B28CB8aC9469818B7462591506".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+
+    // OP
+    [CHAIN_CODE.OP_MAINNET]: {
+      MINT_NFT_FACTORY: "0x8D062f89e71FF11C8b8914558995DD4e9862D981",
+      MINT_NFT_FACTORY_V2: "0xAf1FF8e04Aa97d2C155fBa9829CB152169bfD8fD".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721:
+        "0x12CcE7bcA11364Da0D120Fb82B4042a46a8Cf586".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.ZKSYNC_ERA_MAINNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0xB4F9C9aEBfb8338B2D5b2daa4190DE5Da1ce30A0".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.ARBITRUM_MAINNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0xAf1FF8e04Aa97d2C155fBa9829CB152169bfD8fD".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.SCROLL_MAINNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0xAf1FF8e04Aa97d2C155fBa9829CB152169bfD8fD".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.POLYGON_MAINNET]: {
+      MINT_NFT_FACTORY: "".trim(),
+      MINT_NFT_FACTORY_V2: "0xC5D9f31180579284eeB5f891dDc7b1c83eFfD63d".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f".trim(),
+      SOCIAL_VAULT: "0xb9EC4C13172636b5F1f80e667F9ed437F5f5D4FD".trim(),
+    },
+    [CHAIN_CODE.AVAX]: {
+      MINT_NFT_FACTORY: "".trim(),
+      MINT_NFT_FACTORY_V2: "0xe24165ba2bE15a27f5569d179C1bB07369Bc903a".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7".trim(),
+      SOCIAL_VAULT: "0xC84505Bc6deB215e2E81f013702faFE8bAd2928F".trim(),
+    },
+    [CHAIN_CODE.ZORA]: {
+      MINT_NFT_FACTORY: "".trim(),
+      MINT_NFT_FACTORY_V2: "0x19fb5a5ee3d93E8a5BdC330AC8D04B496C91792e".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.OPBNB]: {
+      MINT_NFT_FACTORY: "".trim(),
+      MINT_NFT_FACTORY_V2: "0xe24165ba2bE15a27f5569d179C1bB07369Bc903a".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.BSC_MAINNET]: {
+      MINT_NFT_FACTORY: "".trim(),
+      MINT_NFT_FACTORY_V2: "0xe24165ba2bE15a27f5569d179C1bB07369Bc903a".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "0x55d398326f99059ff775485246999027b3197955".trim(),
+      SOCIAL_VAULT: "0x2a7B025492Fd8E8448D729556e09cf660f6dDF3B".trim(),
+    },
+    [CHAIN_CODE.LINEA]: {
+      MINT_NFT_FACTORY: "".trim(),
+      MINT_NFT_FACTORY_V2: "0xe24165ba2bE15a27f5569d179C1bB07369Bc903a".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.MANTA]: {
+      MINT_NFT_FACTORY: "".trim(),
+      MINT_NFT_FACTORY_V2: "0xe24165ba2bE15a27f5569d179C1bB07369Bc903a".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.ZETACHAIN_MAINNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0xb9ec4c13172636b5f1f80e667f9ed437f5f5d4fd".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "0xe24165ba2bE15a27f5569d179C1bB07369Bc903a".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1:
+        "0xCCb18273696CA4D8623594E0AeF8B90515CC5F3a".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.BLAST_MAINNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0xe24165ba2bE15a27f5569d179C1bB07369Bc903a".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+
+    ///// TESTNET
+    [CHAIN_CODE.ZETACHAIN_TESTNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0xbcc2e7dde130ef6cb20ad4daa360cfa4e6e2b9ac".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      // TOKEN_FACTORY_V1: "0xF13CD5B5178FE50480c1087Dd61b34E08362Da11".trim(),
+      // PRESALE_FAIR_LAUNCH_FACTORY_V1: "0x52d4787c42745F6053F3646074a7B616856DC5c1".trim()
+      TOKEN_FACTORY_V1: "".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "".trim(),
+      USDT: "".trim(),
+    },
+    [CHAIN_CODE.BSC_TESTNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0xA0AB7FA5415bec56D6fB7698b4C53cbe3d55598e".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "0x59d69d3be557f6d50cC5E34FA894377Fd5548C15".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1:
+        "0xa8d4c599a2d04FB72141541C56fB8403077E8577".trim(),
+      USDT: "0xb14E187575b71999a5D39f68944c00B48Dd17Cc0".trim(),
+      SOCIAL_VAULT: "0x97c743eC598171999d345B937d29320Af8F90029".trim(),
+    },
+    [CHAIN_CODE.BLAST_TESTNET]: {
+      MINT_NFT_FACTORY: "",
+      MINT_NFT_FACTORY_V2: "0x15ca7e1203F25e4a56D86faCB6c4715bbA52e795".trim(),
+      STAKE_NFT_AUTO_APY: "".trim(),
+      WSHARKIE: "".trim(),
+      SHARKIE_NFT: "".trim(),
+      STAKE_MULTIPLE_ERC721: "".trim(),
+
+      BPUNK_NFT: "".trim(),
+      BPUNK_STAKE_NFT_AUTO_APY: "".trim(),
+      TOKEN_FACTORY_V1: "0xfa96E2Ee5819dc82054b031feA68dDADC907F123".trim(),
+      PRESALE_FAIR_LAUNCH_FACTORY_V1: "0xAB72D4d28178c9f1AE628160a047201ec6582B5F".trim(),
+      USDT: "".trim(),
+    },
+  },
+};
+
+export default config;

@@ -1,0 +1,10 @@
+{
+  "en": {
+    "title": "Approval",
+    "description": "You have not approved before, please approve BUSD, BNB to gain access to purchase NFT.",
+    "note": "*You only have to approve once",
+    "cancel": "Cancel",
+    "approve": "Approve"
+  },
+  "vn": {}
+}
